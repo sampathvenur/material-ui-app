@@ -1,8 +1,10 @@
 import React from 'react';
 import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@mui/material';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
-const  App = () => {
+const App = () => {
     return (
         <>
             <CssBaseline />
@@ -25,6 +27,11 @@ const  App = () => {
                         </Typography>
                     </Container>
                 </div>
+                <ButtonGroup variant="contained" aria-label="Basic button group">
+                    <Button>One</Button>
+                    <Button>Two</Button>
+                    <Button>Three</Button>
+                </ButtonGroup>
             </main>
         </>
     );
